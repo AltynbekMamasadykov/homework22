@@ -24,7 +24,7 @@ public class Main {
             int lineNumber = 0;
             while (scanner.hasNextLine()){
                 lineNumber++;
-                System.out.println(lineNumber+" :"+scanner.nextLine());
+                System.out.println(lineNumber+": "+scanner.nextLine());
             }
         }catch (IOException e){
             System.out.println(e.getMessage());
