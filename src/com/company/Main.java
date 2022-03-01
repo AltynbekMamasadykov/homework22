@@ -21,8 +21,10 @@ public class Main {
 
         try(FileReader reader = new FileReader("alphanumerics.txt")){
             Scanner scanner = new Scanner(reader);
+            int lineNumber = 0;
             while (scanner.hasNextLine()){
-                System.out.println(scanner.nextLine());
+                lineNumber++;
+                System.out.println(lineNumber+" :"+scanner.nextLine());
             }
         }catch (IOException e){
             System.out.println(e.getMessage());
